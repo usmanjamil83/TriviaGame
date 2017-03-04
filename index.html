@@ -1,29 +1,83 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="https://bootswatch.com/readable/bootstrap.min.css">
-	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
-	<title>TriviaGame</title>
+  <meta charset="utf-8">
+  <title>TriviaGame</title>
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 </head>
 <body>
-	<div>
-		<header>
-		</header>
-	</div>
 
-	<div class="container">
-		<div class="row">
-		</div>
-	</div>
-	<footer>
-		<h1>Copyright © 2016 Usman Jamil</h1>
-	</footer>
-	
-	<script src="assets/javascript/game.js"></script>
+ <div>
+  <h1>Totally Trivial Trivia!</h1>
+</div>
+
+<div class="container">
+
+  <div class="widget">
+
+    <div>
+      <h3>Time Remaining:<span id="timeRemaining"></span></h3>
+    </div>
+
+    <form>
+      <fieldset>
+       <legend>What state is Mount Rushmore located in?</legend>    
+       <input type="radio" name="radio-1">South Dakota
+       <input type="radio" name="radio-1">New Mexico
+       <input type="radio" name="radio-1">West Virginia
+       <input type="radio" name="radio-1">District of Columbia
+     </fieldset>
+
+     <fieldset>
+      <legend>What is the capital city of California?</legend>
+      <input type="radio" name="radio-2">San Francisco
+      <input type="radio" name="radio-2">Los Angeles
+      <input type="radio" name="radio-2">San Diego
+      <input type="radio" name="radio-2">Sacramento
+    </fieldset>
+
+    <fieldset>
+      <legend>Which explorer discovered America?</legend>
+      <input type="radio" name="radio-3">Marco Polo
+      <input type="radio" name="radio-3">Amerigo Vespucci
+      <input type="radio" name="radio-3">Christopher Columbus
+      <input type="radio" name="radio-3">Francis Drake
+    </fieldset>
+
+    <fieldset>
+      <legend>How many stripes are displayed on the American flag?</legend>
+      <input type="radio" name="radio-4">12
+      <input type="radio" name="radio-4">10
+      <input type="radio" name="radio-4">13
+      <input type="radio" name="radio-4">15
+    </fieldset>
+
+    <fieldset>
+      <legend>What is the most populated city in America?</legend>
+      <input type="radio" name="radio-5">Houston, TX
+      <input type="radio" name="radio-5">Los Angeles
+      <input type="radio" name="radio-5">Chicago, IL
+      <input type="radio" name="radio-5">New York, NY
+    </fieldset>
+  </form>
+  <button id="done">Done</button>
+</div>
+
+<div id="result">
+  <h3><span id="correct"></span></h3>
+  <h3><span id="incorrect"></span></h3>
+  <h3><span id="unanswered"></span></h3>
+</div>
+
+<button id="start">Start</button>
+
+</div>
+
+<script src="assets/javascript/app.js"></script>
+
 </body>
 </html>
